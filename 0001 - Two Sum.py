@@ -1,7 +1,12 @@
-def twoSum(nums, target):
-    num_map = {}  
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
     
-    for index, num in enumerate(nums):
+      for index, num in enumerate(nums):
         complement = target - num  
         
         if complement in num_map:
