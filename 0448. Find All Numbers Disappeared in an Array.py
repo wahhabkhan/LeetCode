@@ -6,6 +6,6 @@ class Solution(object):
         """
         seen = set(nums)
 
-        seen = [i for i in range(1,len(nums)+1) if i not in seen] 
+        missing = [i for i in range(1,len(nums)+1) if i not in seen] 
 
-        return seen
+        return missing
